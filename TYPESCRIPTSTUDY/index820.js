@@ -81,5 +81,56 @@ function marrying(x, y, z) {
         return "결혼가능";
     }
 }
-console.log(marrying(100, true, '상'));
-console.log(marrying(3000, true, '상'));
+console.log(marrying(100, true, "상"));
+console.log(marrying(3000, true, "상"));
+function 내함수(x) {
+    var array = [];
+    array[0] = x;
+}
+function cleaning(x) {
+    var done = [];
+    x.forEach(function (y) {
+        if (typeof y === "string") {
+            done.push(parseFloat(y));
+        }
+        else {
+            done.push(y);
+        }
+    });
+    return done;
+}
+console.log(cleaning([123, "2"]));
+function teaching(subj) {
+    if (typeof subj.subject == "string") {
+        return subj.subject;
+    }
+    else if (Array.isArray(subj.subject)) {
+        return subj.subject[subj.subject.length - 1];
+    }
+}
+console.log(teaching({ subject: "math" })); //이 경우 'math'를 return
+console.log(teaching({ subject: ["science", "art", "korean"] })); //이 경우 'korean'을 return
+var animal = "kim ";
+var animal2 = { name: "kim", age: 20 };
+var girlfriend = {};
+girlfriend.name = "yura";
+var 테스트용변수 = {
+    size: 123,
+    position: [1, 2, 3],
+};
+var 회원가입정보 = {
+    name: "kim",
+    mizza: false,
+    phone: 1234,
+};
+var name3;
+var Itsme;
+Itsme = "solo";
+function func1(a) {
+    return 1;
+}
+func1("hello");
+function rsp(inp) {
+    return ["paper",];
+}
+var ;
