@@ -242,6 +242,3 @@ func1("hello");
 function rsp(inp: "rock" | "siccor" | "paper"): ("rock" | "siccor" | "paper")[] {
   return ["paper",];
 }
-
-
-const 
