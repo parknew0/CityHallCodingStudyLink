@@ -133,4 +133,31 @@ func1("hello");
 function rsp(inp) {
     return ["paper",];
 }
-var ;
+var myfun3 = function (a) {
+    return 10;
+};
+var membership = {
+    name: 'kim',
+    plusOne: function (a) {
+        return a + 1;
+    },
+    changeName: function () {
+        console.log('안녕');
+    }
+};
+membership.plusOne(2);
+var member = {
+    name: 'kim',
+    plusOne: function (a) {
+        return a + 1;
+    },
+    changeName: function () {
+        console.log('안녕');
+    }
+};
+function func3(a) {
+    a();
+}
+function func4() {
+}
+func3(func4);
