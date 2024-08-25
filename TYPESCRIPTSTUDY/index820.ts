@@ -239,52 +239,51 @@ function func1(a: "hello"): 1 | 0 {
 
 func1("hello");
 
-function rsp(inp: "rock" | "siccor" | "paper"): ("rock" | "siccor" | "paper")[] {
-  return ["paper",];
+function rsp(
+  inp: "rock" | "siccor" | "paper"
+): ("rock" | "siccor" | "paper")[] {
+  return ["paper"];
 }
 
+type Mytype2 = (a: string) => number; //string 먹고 number 뱉음
 
-type Mytype2 = (a:string) => number; //string 먹고 number 뱉음
-
-let myfun3 : Mytype2 = function(a) { //함수 표현식
-  return 10
-}
+let myfun3: Mytype2 = function (a) {
+  //함수 표현식
+  return 10;
+};
 
 let membership = {
-  name : 'kim',
-  plusOne(a : number) : number {
+  name: "kim",
+  plusOne(a: number): number {
     return a + 1;
   },
-  changeName : () :void => {
-    console.log('안녕')
-  }
-}
+  changeName: (): void => {
+    console.log("안녕");
+  },
+};
 
 membership.plusOne(2);
 
+type Member2 = {
+  name: string;
+  plusOne: (a: number) => number;
+  changeName: () => void;
+};
 
-type Member = {
-  name: string,
-  plusOne : (a: number) => number,
-  changeName: () => void,
-}
-
-let member : Member = {
-  name : 'kim',
+let member: Member2 = {
+  name: "kim",
   plusOne(a) {
     return a + 1;
   },
-  changeName : () => {
-    console.log('안녕')
-  }
-}
+  changeName: () => {
+    console.log("안녕");
+  },
+};
 
 function func3(a) {
-  a()
+  a();
 }
 
-function func4() {
-  
-}
+function func4() {}
 
-func3(func4)
+func3(func4);

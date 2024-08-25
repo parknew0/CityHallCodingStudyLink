@@ -131,33 +131,33 @@ function func1(a) {
 }
 func1("hello");
 function rsp(inp) {
-    return ["paper",];
+    return ["paper"];
 }
 var myfun3 = function (a) {
+    //함수 표현식
     return 10;
 };
 var membership = {
-    name: 'kim',
+    name: "kim",
     plusOne: function (a) {
         return a + 1;
     },
     changeName: function () {
-        console.log('안녕');
-    }
+        console.log("안녕");
+    },
 };
 membership.plusOne(2);
 var member = {
-    name: 'kim',
+    name: "kim",
     plusOne: function (a) {
         return a + 1;
     },
     changeName: function () {
-        console.log('안녕');
-    }
+        console.log("안녕");
+    },
 };
 function func3(a) {
     a();
 }
-function func4() {
-}
+function func4() { }
 func3(func4);

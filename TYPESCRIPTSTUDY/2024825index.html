@@ -1,0 +1,41 @@
+<h4 id="title">안녕하세요</h4>
+<a href="naver.com" class="link">링크</a>
+<button id="button">버튼</button>
+
+<img id="image" src="test.jpg" />
+
+<a class="naver" href="naver.com">링크</a>
+<a class="naver" href="naver.com">링크</a>
+<a class="naver" href="naver.com">링크</a>
+
+<script src="index825.js"></script>
+<script>
+  function myfunc1(x, y) {
+    this.q = x;
+    this.w = y;
+  }
+
+  var nunu = new myfunc1("consume", "snowball");
+  var garen = new myfunc1("strike", "courage");
+
+  // var nunu = {
+  //   q: "consume",
+  //   w: "snowball",
+  // };
+
+  // var garen = {
+  //   q: "strike",
+  //   w: "courage",
+  // };
+
+  class Myfunc2 {
+    constructor(x, y) {
+      this.q = x;
+      this.w = y;
+    }
+  }
+
+  Myfunc2.prototype.name = "kim";
+
+  var teemo = new Myfunc2("ddd", "www");
+</script>
