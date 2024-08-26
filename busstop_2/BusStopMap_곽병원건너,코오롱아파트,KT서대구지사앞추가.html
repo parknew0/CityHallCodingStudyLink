@@ -56,7 +56,7 @@
   <body>
     <h1 id="title">대구시 버스 정류장 위치</h1>
     <div id="menu" style="margin-top: 90px; margin-left: 20px">
-      <button onclick="loadMarkers('중구'); SpecialloadMarkers('중구') ">
+      <button onclick="loadMarkers('중구'); SpecialloadMarkers('중구')">
         중구
       </button>
       <button onclick="loadMarkers('동구'); SpecialloadMarkers('동구')">
@@ -81,9 +81,6 @@
         달성군
       </button>
       <button class="gray-button" onclick="toggleMarkers() ">모니터링</button>
-      <button class="gray-button" onclick="loadMarkers('스마트쉘터')">
-        스마트 쉘터
-      </button>
     </div>
     <div id="map"></div>
 
@@ -5131,47 +5128,6 @@
               { lat: 35.70115252, lng: 128.441915, title: "달성스포츠파크앞" },
               { lat: 35.68110198, lng: 128.4576856, title: "영풍열처리건너" },
             ];
-          case "스마트쉘터":
-            return [
-              { lat: 35.88455522, lng: 128.5903715, title: "이마트칠성점앞" },
-              {
-                lat: 35.89048403,
-                lng: 128.5556656,
-                title: "트레이더스홀세일클럽비산점앞",
-              },
-              {
-                lat: 35.8948069,
-                lng: 128.6187185,
-                title: "영진전문대학교후문앞",
-              },
-              { lat: 35.93178333, lng: 128.5553817, title: "칠곡운암역1" },
-              { lat: 35.86894817, lng: 128.5474794, title: "중리롯데캐슬앞" },
-              { lat: 35.85578842, lng: 128.551489, title: "광장타운앞" },
-              { lat: 35.8712853, lng: 128.5589189, title: "서구청앞" },
-              {
-                lat: 35.87194252,
-                lng: 128.5739677,
-                title: "대구제일고등학교앞",
-              },
-              {
-                lat: 35.88560993,
-                lng: 128.5740196,
-                title: "원대동행정복지센터앞",
-              },
-              { lat: 35.88435658, lng: 128.5558072, title: "북부정류장" },
-              {
-                lat: 35.8522146,
-                lng: 128.4848446,
-                title: "계명대학교정문건너",
-              },
-              { lat: 35.848725, lng: 128.5278917, title: "용산역(2번출구)" },
-              { lat: 35.84964447, lng: 128.5316197, title: "용산네거리2" },
-              {
-                lat: 35.80842333,
-                lng: 128.517995,
-                title: "수목원삼성래미안1차앞",
-              },
-            ];
           default:
             return [];
         }
@@ -5699,10 +5655,6 @@
       // Optionally load initial markers
       loadMarkers("중구");
       SpecialloadMarkers("중구");
-
-
-
-
     </script>
   </body>
 </html>
